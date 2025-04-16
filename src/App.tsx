@@ -3,30 +3,30 @@ import { useEffect } from 'react';
 import { useAppSelector, useAppDispatch } from './app/hooks';
 
 // Layouts
-import MainLayout from './components/layout/MainLayout';
-import AuthLayout from './components/layout/AuthLayout';
-import DashboardLayout from './components/layout/DashboardLayout';
+import MainLayout from '@/components/layout/MainLayout';
+import AuthLayout from '@/components/layout/AuthLayout';
+import DashboardLayout from '@/components/layout/DashboardLayout';
 
 // Pages
-import HomePage from './pages/HomePage';
-import LoginPage from './pages/auth/LoginPage';
-import RegisterPage from './pages/auth/RegisterPage';
-import DashboardPage from './pages/dashboard/DashboardPage';
-import AgentsListPage from './pages/agents/AgentsListPage';
-import AgentDetailPage from './pages/agents/AgentDetailPage';
-import AgentChatPage from './pages/agents/AgentChatPage';
-import AgentBuilderPage from './pages/agents/AgentBuilderPage';
-import McpMarketplacePage from './pages/mcp/McpMarketplacePage';
-import McpDetailPage from './pages/mcp/McpDetailPage';
-import McpRegistrationPage from './pages/mcp/McpRegistrationPage';
-import ProfilePage from './pages/settings/ProfilePage';
-import TokenUsagePage from './pages/settings/TokenUsagePage';
-import BillingPage from './pages/settings/BillingPage';
-import NotFoundPage from './pages/NotFoundPage';
+import HomePage from '@/pages/HomePage';
+import LoginPage from '@/pages/auth/LoginPage';
+import RegisterPage from '@/pages/auth/RegisterPage';
+import DashboardPage from '@/pages/dashboard/DashboardPage';
+import AgentsListPage from '@/pages/agents/AgentsListPage';
+import AgentDetailPage from '@/pages/agents/AgentDetailPage';
+import AgentChatPage from '@/pages/agents/AgentChatPage';
+import AgentBuilderPage from '@/pages/agents/AgentBuilderPage';
+import McpMarketplacePage from '@/pages/mcp/McpMarketplacePage';
+import McpDetailPage from '@/pages/mcp/McpDetailPage';
+import McpRegistrationPage from '@/pages/mcp/McpRegistrationPage';
+import ProfilePage from '@/pages/settings/ProfilePage';
+import TokenUsagePage from '@/pages/settings/TokenUsagePage';
+import BillingPage from '@/pages/settings/BillingPage';
+import NotFoundPage from '@/pages/NotFoundPage';
 
 // Auth
-import { isAuthenticated } from './utils/auth';
-import { refreshUser } from './features/auth/authSlice';
+import { isAuthenticated } from '@/utils/auth';
+import { refreshUser } from '@/features/auth/authSlice';
 
 // Routes
 import * as ROUTES from './config/routes';
