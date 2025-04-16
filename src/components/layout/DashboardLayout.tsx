@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Outlet, Link, useLocation } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import { useAppSelector } from '@/app/hooks';
 import Navbar from '@/components/common/Navbar';
 import Sidebar from '@/components/common/Sidebar';

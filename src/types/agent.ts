@@ -31,14 +31,27 @@ export interface LlmSettings {
     id: string;
     name: string;
     description: string;
+    type: string;
     avatar?: string;
+    llm_provider: string;
+    configuration: {
+      system_prompt: string;
+      temperature: number;
+      max_tokens: number;
+      history_length: number;
+      reasoning_enabled: boolean;
+      llm_settings: {
+        provider: string;
+        model: string;
+      };
+    };
+    is_active: boolean;
     created_at: string;
     updated_at: string;
-    user_id: string;
-    is_active: boolean;
-    llm_provider: string;
-    mcps: AgentMcp[];
-    configuration: AgentConfiguration;
+    mcps: Array<{
+      mcp_id: string;
+      name: string;
+    }>;
   }
   
   export interface AgentWithStats extends Agent {
